@@ -1,7 +1,7 @@
 # kampan.github.io
-This is the official site of aNetu project "Campagin."
+-This is the official site of aNetu project "Campagin."
 This project was realised by Slovakian internet company aNetu.eu.org for young people to achieve new digital abilities for the future life of Slovakia and it's job contributions.
-We distribute free & cheap digital solutions as listed:
+We distribute free & cheap digital solutions as listed:-
 --------------------
 - Web services
 - FREE Windows system licences
