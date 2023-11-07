@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campagin - ANETU Corporations</title>
+    <!-- Include Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Include Google Fonts for custom font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -25,18 +30,34 @@
         .section {
             padding: 80px 0;
         }
+        .menu-icon {
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation bar -->
     <nav class="bg-primary p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="text-2xl font-semibold text-white">Campagin</div>
+            <a href="#">
+                <img src="https://i.ibb.co/cwXqWXB/Picsart-23-11-07-12-56-30-807.png" alt="Campagin Logo" width="159">
+            </a>
             <ul class="flex space-x-6">
-                <li><a href="#" class="text-white">Home</a></li>
-                <li><a href="#" class="text-white">Web Hosting</a></li>
-                <li><a href="#" class="text-white">Cloud Services</a></li>
-                <li><a href="#" class="text-white">API Hosting</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bi bi-house-door menu-icon"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bi bi-cloud menu-icon"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" data-bs-toggle="dropdown">
+                        <i class="bi bi-globe menu-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="langDropdown">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Slovak</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
@@ -46,7 +67,8 @@
         <div class="container mx-auto text-center">
             <h1 class="text-4xl font-semibold">Welcome to Campagin</h1>
             <p class="mt-4 text-lg text-gray-600">
-                Campagin is the new project by ANETU Corporations, designed to empower young people with free digital services and more.
+                <img src="https://i.ibb.co/ZNdrpkX/Picsart-23-11-07-14-26-59-422.png" />
+                Campagin is the new project by ANETU Corporations, designed to empower young people with free digital services and more. The campagin is limited, do not waste your time!
             </p>
             <a href="#" class="btn-primary inline-block mt-8 px-6 py-3 rounded-full">Get Started</a>
         </div>
@@ -58,22 +80,29 @@
             <h2 class="text-3xl font-semibold">Our Services</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
                 <div class="p-6 text-center bg-white rounded-lg shadow">
-                    <h3 class="text-xl font-semibold">Web Hosting</h3>
-                    <p class="mt-4 text-gray-600">Reliable web hosting for your projects.</p>
+                    <h3 class="text-xl font-semibold"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-central-south-asia" viewBox="0 0 16 16"> <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM4.882 1.731a.482.482 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.721.721 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a.996.996 0 0 0-.462-.04 7.03 7.03 0 0 1 2.45-2.027Zm-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.78.78 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.454.454 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282a.61.61 0 0 0 .04-.001 7.003 7.003 0 0 1-12.658.905Z"/> </svg> Unlimited Web Hosting</h3>
+                    <p class="mt-4 text-gray-600">Free unlimited web hosting FOREVER. Even if the campagin ends soon, our services will be up mostly forever, depends on the service and it's bandwidth. Get now free cPanel hosting with Unlimited SSD Storage & Bandwidth, Unlimited e-mails and databases. (917 available)</p>
                 </div>
                 <div class="p-6 text-center bg-white rounded-lg shadow">
-                    <h3 class="text-xl font-semibold">Cloud Services</h3>
-                    <p class="mt-4 text-gray-600">Seamless cloud solutions to scale your operations.</p>
+                    <h3 class="text-xl font-semibold"><span class="glyphicon glyphicon-cloud"></span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+  <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+</svg>Cloud Services</h3>
+                    <p class="mt-4 text-gray-600">Store large data on DMCA ignored server with 12tb NVMe SSD Storage, 400Tb of bandwidth with 42gb RAM and 24-core CPU for 289€ Yearly. (This price is only available for students with .EDU mail or visiting confirmation paper only!) Regular price: 1399€ Yearly (259 Available)</p>
                 </div>
                 <div class="p-6 text-center bg-white rounded-lg shadow">
-                    <h3 class="text-xl font-semibold">API Hosting</h3>
-                    <p class="mt-4 text-gray-600">Host your APIs and services with ease.</p>
+                    <h3 class="text-xl font-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hdd-network-fill" viewBox="0 0 16 16">
+  <path d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h5.5v3A1.5 1.5 0 0 0 6 11.5H.5a.5.5 0 0 0 0 1H6A1.5 1.5 0 0 0 7.5 14h1a1.5 1.5 0 0 0 1.5-1.5h5.5a.5.5 0 0 0 0-1H10A1.5 1.5 0 0 0 8.5 10V7H14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z"/>
+</svg>API Hosting</h3>
+                    <p class="mt-4 text-gray-600">Host your APIs and services with ease. Contact us for your plan listing. Comes with free *.an.sk; anetu-cdn.net; glob-cdn; fscdn.alto.sk; anfast.cdn.net; sk.host extension domains for free forever! (Coming out soon.)</p>
                 </div>
             </div>
         </div>
+        <br>
+        <img src="https://i.ibb.co/Kh6NwNv/Picsart-23-11-07-14-16-50-633.png" />
     </section>
 
     <!-- About section -->
+ 
     <section class="section">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-semibold">About Campagin</h2>
@@ -81,14 +110,16 @@
                 Campagin is the evolution of ANETU's Free Web Services, a commitment to empower young people with a broader spectrum of digital services. Our mission is to provide free web hosting, cloud services, video hosting, audio and video distribution, frameworks, API hosting, free VPS, free Windows licenses, and more.
             </p>
         </div>
+        <br>
+         <img src="https://i.ibb.co/XV0pTmW/Picsart-23-11-07-14-23-06-502.png" />
     </section>
     
     <!-- Call to Action -->
     <section class="bg-primary text-white py-16">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold">Ready to get started with Campagin?</h2>
-            <p class="mt-4 text-lg">Join us and unlock a world of possibilities.</p>
-            <a href="#" class="btn-primary inline-block mt-8 px-6 py-3 rounded-full">Get Started</a>
+            <h2 class="text-3xl font-semibold">Ready to rock with us?</h2>
+            <p class="mt-4 text-lg">You cannot yet, this project is still under construction. We are sorry :(.</p>
+            <a href="#" class="btn-primary inline-block mt-8 px-6 py-3 rounded-full">Campagin is not yet available internationaly.</a>
         </div>
     </section>
 
@@ -99,4 +130,5 @@
         </div>
     </footer>
 </body>
-</html>
+                    </html>
+                
